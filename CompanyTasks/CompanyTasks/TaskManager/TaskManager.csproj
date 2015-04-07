@@ -44,6 +44,10 @@
     <Compile Include="Common\CommonValidation.cs" />
     <Compile Include="Common\Exception\InvalidRangeException.cs" />
     <Compile Include="Common\IValidation.cs" />
+    <Compile Include="Engine\Command.cs" />
+    <Compile Include="Engine\TasksFactory.cs" />
+    <Compile Include="Engine\UsersFactory.cs" />
+    <Compile Include="Engine\TaskManagerEngine.cs" />
     <Compile Include="TaskManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Task\Interfaces\ISubscriber.cs" />
@@ -62,7 +66,6 @@
     <Compile Include="Task\Subtask.cs" />
     <Compile Include="Task\TestReminderSubscriber.cs" />
     <Compile Include="Task\ToDo.cs" />
-    <Compile Include="Task\ToDoFactory.cs" />
     <Compile Include="Task\Validation\CommentValidation.cs" />
     <Compile Include="Task\Validation\ICommentValidation.cs" />
     <Compile Include="Task\Validation\ITaskValidation.cs" />
@@ -76,14 +79,13 @@
     <Compile Include="User\Interfaces\IBoss.cs" />
     <Compile Include="User\Interfaces\IClient.cs" />
     <Compile Include="User\Interfaces\IEmployee.cs" />
-    <Compile Include="User\Interfaces\IIsPromotedToSinior - Copy.cs" />
     <Compile Include="User\Interfaces\IPerson.cs" />
     <Compile Include="User\Interfaces\ITeam.cs" />
     <Compile Include="User\Person.cs" />
     <Compile Include="User\Enums\Gender.cs" />
     <Compile Include="User\Interfaces\ICreateNewTask.cs" />
-    <Compile Include="User\Interfaces\IManager.cs" />
-    <Compile Include="User\Interfaces\IIsPromotedToSinior.cs" />
+    <Compile Include="User\Interfaces\ITeamLeader.cs" />
+    <Compile Include="User\Interfaces\IIsPromotedToSenior.cs" />
     <Compile Include="User\Interfaces\IPromote.cs" />
     <Compile Include="User\JuniorEmployee.cs" />
     <Compile Include="User\TeamLeader.cs" />

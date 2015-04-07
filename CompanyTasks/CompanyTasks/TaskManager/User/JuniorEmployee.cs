@@ -8,7 +8,7 @@ namespace TaskManager.User
 
     using Enums;
     using User.Interfaces;
-
+    
     public class JuniorEmployee : Employee, IIsPromotedToSenior
     {
         private const decimal InitSalary = 900;

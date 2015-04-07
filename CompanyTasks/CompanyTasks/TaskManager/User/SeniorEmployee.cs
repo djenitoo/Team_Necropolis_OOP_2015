@@ -6,7 +6,7 @@ namespace TaskManager.User
     using Enums;
     using Interfaces;
 
-    public class SeniorEmployee : Employee, IIsPromotedToManager
+    public class SeniorEmployee : Employee, IIsPromotedToTeamLeader
     {
         private const decimal InitSalary = 2000M;
         private const PositionType InitPosition = PositionType.SeniorEmployee;
