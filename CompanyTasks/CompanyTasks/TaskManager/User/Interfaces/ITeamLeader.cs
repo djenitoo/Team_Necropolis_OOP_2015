@@ -2,7 +2,7 @@
 {
     using System.Collections.Generic;
 
-    public interface IManager 
+    public interface ITeamLeader 
     {
         Team Team { get; }
     }

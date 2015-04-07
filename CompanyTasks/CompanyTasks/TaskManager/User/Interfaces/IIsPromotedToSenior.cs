@@ -1,6 +1,6 @@
 ﻿namespace TaskManager.User.Interfaces
 {
-    public interface IIsPromotedToSinior
+    public interface IIsPromotedToSenior
     {
         /*
          * If a manager promote some employee, then with the promote method

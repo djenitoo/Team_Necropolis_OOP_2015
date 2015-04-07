@@ -1,9 +1,13 @@
-﻿
-namespace TaskManager.Task
+﻿namespace TaskManager.Engine
 {
-    using Interfaces;
+    using System;
+    using System.Collections.Generic;
 
-    public class ToDoFactory : IToDoFactory
+    using Task;
+    using Task.Interfaces;
+    using Task.Enum;
+    
+    public class TasksFactory
     {
         public IToDo CreateImportantToDo(string initTitle, string initDescription)
         {

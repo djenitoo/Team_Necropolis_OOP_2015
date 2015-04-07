@@ -13,7 +13,7 @@ namespace TaskManager.User
     using User.Interfaces;
     using Task.Interfaces;
 
-    public class TeamLeader : Employee, IManager, IPromote
+    public class TeamLeader : Employee, ITeamLeader, IPromote
     {
         private const decimal InitSalary = 3000M;
         private const PositionType InitPosition = PositionType.TeamLeader;
