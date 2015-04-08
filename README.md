@@ -32,7 +32,7 @@ Git repo - [a link](https://github.com/djenitoo/Team_Necropolis_OOP_2015)
 
 ####Progress of requirements
 
-+ At least 5 interfaces (with one or more implementations) - **done**
++ At least 5 interfaces (with one or more implementations) **done**
 + At least 15 classes (implementing the application logic) **done**
 + At least 3 abstract classes (with inheritors) **done**
 	1. Peson
@@ -40,7 +40,7 @@ Git repo - [a link](https://github.com/djenitoo/Team_Necropolis_OOP_2015)
 	3. Common Validator
 + At least 1 custom exception class (with usage in your code) **done**
 + At least 3 levels of depth in inheritance **done**
-+ At least 1 polymorphism usage
++ At least 1 polymorphism usage **done**
 + At least 1 structure
 + At least 1 enumeration **done**
 + At least 1 event (with subscribers) **done**
