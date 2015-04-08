@@ -8,12 +8,12 @@
     using Enums;
     using User.Interfaces;
 
-    public class Boss : Person, IBoss
+    public class Boss : Employee, IBoss
     {
         public ICollection<IClient> clients { get; private set; }
 
-        public Boss(string name, DateTime dateBirth, Gender sex)
-            : base(name, dateBirth, sex)
+        public Boss(string name, DateTime dateBirth, Gender sex, DateTime dateHired, decimal salary)
+            : base(name, dateBirth, sex, PositionType.Boss, dateHired, salary)
         {
             this.clients = new List<IClient>();
         }

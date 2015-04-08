@@ -2,14 +2,18 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Linq;
 
     using Exception;
+    using User.Interfaces;
+    using Task.Interfaces;
 
     public abstract class CommonValidation : IValidation
     {
         private const string ErrMessNotNullable = "{0} can not be null!";
         private const string ErrMessWhenStringIsNevalid = "{0} must be to less from {1} or to bigger from {2}";
         private const string ErrMEssIntegerCanNotBeNegative = "Integer can not be negative";
+        
 
         public void StringLengthMinMax(string value,string param, int maxLength, int minLength)
         {
@@ -47,5 +51,7 @@
                         string.Format(ErrMessWhenStringIsNevalid , param , maxLength, minLength));
             }
         }
+
+        
     }
 }

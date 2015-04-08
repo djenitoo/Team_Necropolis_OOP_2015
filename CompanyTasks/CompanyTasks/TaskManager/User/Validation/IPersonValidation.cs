@@ -9,6 +9,8 @@
         void ValidateDateOfBirth(System.DateTime value);
 
         void ValidateSalary(decimal value);
+        
         void ValidateDateHired(DateTime value);
+
     }
 }

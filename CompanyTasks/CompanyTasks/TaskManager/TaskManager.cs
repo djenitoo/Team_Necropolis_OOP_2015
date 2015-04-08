@@ -14,6 +14,7 @@
     {
         public static void Main()
         {
+            // Example of the functionality that is not yet in the engine
             var manager = new TeamLeader("Kir4o", new DateTime(1968, 05, 20), Gender.Male, new DateTime(1999, 05, 20), new Team("Kir4osTeam"));
             var employee = new JuniorEmployee("Petra", new DateTime(1988, 12, 01), Gender.Female, new DateTime(2005, 09, 05));
             var newEmp = new SeniorEmployee("Stamat", new DateTime(1986, 01, 30), Gender.Male, new DateTime(2002, 07, 16));
@@ -60,14 +61,27 @@
             var someSubscriber = new TestReminderSubscriber(); // Subscriber
 
             someSubtask.ReminderTimeReached += someSubscriber.OnReminderTimeReached; //subscribtion happens here
-            //Checks If Reminder Works 
+            
+            ////Uncomment to Checks If Reminder Works 
             //while (true)
             //{
             //    someSubtask.CheckRemider();
-            //
+            
             //}
 
+            // E N G I N E
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("\r\n \t\t Beginning of Engine: ");
+            Console.ResetColor();
             Engine.TaskManagerEngine.Instance.Start();
+
+            // Example command for new boss :       CreateBoss Miro 1966/12/04 male 1999/02/12 25000
+            // Example command for new team leader: CreateTeamLeader Dobri 1980/03/06 male 2008/08/07 TeamDobri
+            // Example command for new Junior:      CreateJuniorEmployee Rosen 1990/06/05 male 2010/08/10
+            // Example command for new Senior:      CreateSeniorEmployee Maria 1986/11/12 female 2008/06/07
+            // Example command for new Imp. todo:   CreateImportantToDo SomeTitleOfTodo SomeDescrOfTodo
+            // Example command for new Med. todo:   CreateMediumToDo SomeOtherTitleOfTodo SomeOtherDescrOfTodo
+            // Example command for new Low todo:    CreateLowToDo SomeOtherTitleOfTodo SomeOtherDescrOfTodo
 
         }
     }

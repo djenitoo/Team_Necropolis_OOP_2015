@@ -10,9 +10,9 @@
     
     public class UsersFactory
     {
-        public IBoss CreateBoss(string name, DateTime birthDate, Gender gender)
+        public IBoss CreateBoss(string name, DateTime birthDate, Gender gender, DateTime dateHired, decimal salary)
         {
-            IBoss boss = new Boss(name, birthDate, gender);
+            IBoss boss = new Boss(name, birthDate, gender, dateHired, salary);
             return boss;
         }
 

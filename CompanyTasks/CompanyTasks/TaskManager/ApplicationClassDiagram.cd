@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="TaskManager.Common.CommonValidation" Collapsed="true">
-    <Position X="3" Y="8.5" Width="1.5" />
+    <Position X="4" Y="8.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAIAAAABAAAAAAAAAEAAAAQAQAIAAAAAQACAA=</HashCode>
       <FileName>Common\CommonValidation.cs</FileName>
@@ -9,48 +9,92 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="TaskManager.Common.Exception.InvalidRangeException&lt;T&gt;" Collapsed="true">
-    <Position X="13.25" Y="0.5" Width="1.5" />
+    <Position X="17" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAIAAAEAAAA=</HashCode>
       <FileName>Common\Exception\InvalidRangeException.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="TaskManager.Engine.Command" Collapsed="true">
+    <Position X="15.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAgAAAAAAAAEAAAAAAAAAQAAAAEAAAAAIAAAACAAAA=</HashCode>
+      <FileName>Engine\Command.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TaskManager.Engine.TaskManagerEngine" Collapsed="true">
+    <Position X="15.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AoAAAABAgCAAAAUAAAAAEAAAAAAAACAARgAAAAwABAA=</HashCode>
+      <FileName>Engine\TaskManagerEngine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TaskManager.Engine.TasksFactory" Collapsed="true">
+    <Position X="17" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAA=</HashCode>
+      <FileName>Engine\TasksFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TaskManager.Engine.UsersFactory" Collapsed="true">
+    <Position X="15.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACIAAAAAAAAAAAAAAAAAAAQAAABAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Engine\UsersFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Class Name="TaskManager.Task.ImportantToDo" Collapsed="true">
-    <Position X="3" Y="7.25" Width="1.5" />
+    <Position X="0.75" Y="7.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
       <FileName>Task\ImportantToDo.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TaskManager.Task.LowToDo" Collapsed="true">
-    <Position X="5.25" Y="7.25" Width="1.5" />
+    <Position X="3" Y="7.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
       <FileName>Task\LowToDo.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TaskManager.Task.MediumToDo" Collapsed="true">
-    <Position X="0.75" Y="7.25" Width="1.5" />
+    <Position X="5.25" Y="7.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
       <FileName>Task\MediumToDo.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TaskManager.Task.Note" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="15" Y="0.5" Width="1.5" />
+    <Position X="18.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAgAAAAAAgAAAAAAgAAAAAAAAAAAEAAAAAAA=</HashCode>
       <FileName>Task\Note.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
+  <Class Name="TaskManager.Task.ReminderSubTask" Collapsed="true">
+    <Position X="7.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAASAAAAAAAAAAAAAAABAAAAAACAAAAAIAAAAA=</HashCode>
+      <FileName>Task\ReminderSubtask.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
   <Class Name="TaskManager.Task.Subtask" Collapsed="true">
-    <Position X="3" Y="4.5" Width="1.5" />
+    <Position X="4" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAQAAgAGAEICAAAAAgAAAAABAAAAAEAAAAIAA=</HashCode>
       <FileName>Task\Subtask.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TaskManager.Task.TestReminderSubscriber" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Task\TestReminderSubscriber.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="TaskManager.Task.ToDo" Collapsed="true">
     <Position X="3" Y="5.75" Width="1.5" />
@@ -60,24 +104,23 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="TaskManager.Task.ToDoFactory" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="13.25" Y="1.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAA=</HashCode>
-      <FileName>Task\ToDoFactory.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
-  </Class>
   <Class Name="TaskManager.Task.Validation.CommentValidation" Collapsed="true">
-    <Position X="3" Y="9.75" Width="1.5" />
+    <Position X="7.5" Y="9.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAEAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
       <FileName>Task\Validation\CommentValidation.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
+  <Class Name="TaskManager.Task.Validation.ReminderDateValidator" Collapsed="true">
+    <Position X="0.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Task\Validation\ReminderDateValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Class Name="TaskManager.Task.Validation.TaskValidation" Collapsed="true">
-    <Position X="5.25" Y="9.75" Width="1.5" />
+    <Position X="3" Y="9.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AACAAAAAAAEAAAEAIAACAQAEAABAAAAAAQAAAAQAAAA=</HashCode>
       <FileName>Task\Validation\TaskValidation.cs</FileName>
@@ -85,7 +128,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="TaskManager.TaskManager" Collapsed="true">
-    <Position X="16.75" Y="0.5" Width="1.5" />
+    <Position X="20.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>TaskManager.cs</FileName>
@@ -102,7 +145,7 @@
   <Class Name="TaskManager.User.Client" Collapsed="true">
     <Position X="3" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AgAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAEAAACAAAAAgAACAAAAAAAAAAAAAAAAAABAAA=</HashCode>
       <FileName>User\Client.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -110,24 +153,16 @@
   <Class Name="TaskManager.User.Employee" Collapsed="true">
     <Position X="7.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAACAAAAAgDAAkCACAAAgAAAAAAAAAIAAAAAAQAAA=</HashCode>
+      <HashCode>BAAAADAAAAAgDAAkCACAAQgAAAAAAAAAAAAAAIQQAAA=</HashCode>
       <FileName>User\Employee.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="TaskManager.User.JuniorEmployee" Collapsed="true">
-    <Position X="7.5" Y="3.25" Width="1.5" />
+    <Position X="5.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ABAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>User\JuniorEmployee.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="TaskManager.User.Manager" Collapsed="true">
-    <Position X="9.75" Y="3.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAASAAAAAAAEAAgAAAAAAA=</HashCode>
-      <FileName>User\Manager.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
@@ -139,24 +174,32 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="TaskManager.User.SiniorEmployee" Collapsed="true">
-    <Position X="5.25" Y="3.25" Width="1.5" />
+  <Class Name="TaskManager.User.SeniorEmployee" Collapsed="true">
+    <Position X="7.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAASCAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>User\SiniorEmployee.cs</FileName>
+      <FileName>User\SeniorEmployee.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="TaskManager.User.Team" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="18.5" Y="0.5" Width="1.5" />
+    <Position X="18.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAEAAAAAAAAAAAACBAEABgQAEAAAAQAAAAAAAAAA=</HashCode>
       <FileName>User\Team.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
+  <Class Name="TaskManager.User.TeamLeader" Collapsed="true">
+    <Position X="9.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAASAAAAAAAEAAgAAAAAAA=</HashCode>
+      <FileName>User\TeamLeader.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
   <Class Name="TaskManager.User.Validation.PersonValidation" Collapsed="true">
-    <Position X="0.75" Y="9.75" Width="1.5" />
+    <Position X="5.25" Y="9.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACAAAAAAAAAAAAAEAAAAAAAAAAAAAgQAAAAAAABQAAA=</HashCode>
       <FileName>User\Validation\PersonValidation.cs</FileName>
@@ -164,30 +207,37 @@
     <Lollipop Position="0.2" />
   </Class>
   <Interface Name="TaskManager.Common.IValidation" Collapsed="true">
-    <Position X="15" Y="5" Width="1.5" />
+    <Position X="18.75" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAAQAQAAAAAAAAACAA=</HashCode>
       <FileName>Common\IValidation.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="TaskManager.Task.Interfaces.IComment" Collapsed="true">
-    <Position X="15" Y="2.75" Width="1.5" />
+    <Position X="17" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAgAAAAAAgAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
       <FileName>Task\Interfaces\IComment.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="TaskManager.Task.Interfaces.IRepeat" Collapsed="true">
-    <Position X="15" Y="4.25" Width="1.5" />
+    <Position X="15.25" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Task\Interfaces\IRepeat.cs</FileName>
     </TypeIdentifier>
   </Interface>
+  <Interface Name="TaskManager.Task.Interfaces.ISubscriber" Collapsed="true">
+    <Position X="17" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Task\Interfaces\ISubscriber.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Interface Name="TaskManager.Task.Interfaces.ISubtask" Collapsed="true">
     <Position X="0.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAgAEAEAAAAgAAAAAAAABAAAAAEAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAgAGAEAAAAAAAAAAAAABAAAAAEAAAAAAA=</HashCode>
       <FileName>Task\Interfaces\ISubTask.cs</FileName>
     </TypeIdentifier>
   </Interface>
@@ -199,133 +249,133 @@
     </TypeIdentifier>
   </Interface>
   <Interface Name="TaskManager.Task.Interfaces.IToDoFactory" Collapsed="true">
-    <Position X="13.25" Y="5" Width="1.5" />
+    <Position X="17" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAA=</HashCode>
       <FileName>Task\Interfaces\IToDoFactory.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="TaskManager.Task.Validation.ICommentValidation" Collapsed="true">
-    <Position X="16.75" Y="2.75" Width="1.5" />
+    <Position X="18.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
       <FileName>Task\Validation\ICommentValidation.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="TaskManager.Task.Validation.ITaskValidation" Collapsed="true">
-    <Position X="16.75" Y="4.25" Width="1.5" />
+    <Position X="18.75" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AACAAAAAAAAAAAAAIAACAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Task\Validation\ITaskValidation.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="TaskManager.User.Interfaces.IBoss" Collapsed="true">
-    <Position X="13.25" Y="2.75" Width="1.5" />
+    <Position X="15.25" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAABAACAAAAAAA=</HashCode>
       <FileName>User\Interfaces\IBoss.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="TaskManager.User.Interfaces.IClient" Collapsed="true">
-    <Position X="10.75" Y="5.75" Width="1.5" />
+    <Position X="10.5" Y="5.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AgAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAEAAACAAAAAgAACAAAAAAAAAAAAAAAAAABAAA=</HashCode>
       <FileName>User\Interfaces\IClient.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="TaskManager.User.Interfaces.ICreateNewTask" Collapsed="true">
-    <Position X="18.5" Y="2.75" Width="1.5" />
+    <Position X="20.5" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>User\Interfaces\ICreateNewTask.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="TaskManager.User.Interfaces.IEmployee" Collapsed="true">
-    <Position X="8.5" Y="5.75" Width="1.5" />
+    <Position X="12.75" Y="5.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAACAAAAAACAAgAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAADAAAAAACAAgAAAAAQgAAAAAAAAAAAAAAIQAAAA=</HashCode>
       <FileName>User\Interfaces\IEmployee.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="TaskManager.User.Interfaces.IIsPromotedToManager" Collapsed="true">
-    <Position X="13.25" Y="3.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>User\Interfaces\IIsPromotedToSinior - Copy.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
-  <Interface Name="TaskManager.User.Interfaces.IIsPromotedToSinior" Collapsed="true">
-    <Position X="15" Y="3.5" Width="1.5" />
+  <Interface Name="TaskManager.User.Interfaces.IIsPromotedToSenior" Collapsed="true">
+    <Position X="15.25" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>User\Interfaces\IIsPromotedToSinior.cs</FileName>
+      <FileName>User\Interfaces\IIsPromotedToSenior.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="TaskManager.User.Interfaces.IManager" Collapsed="true">
-    <Position X="16.75" Y="3.5" Width="1.5" />
+  <Interface Name="TaskManager.User.Interfaces.IIsPromotedToTeamLeader" Collapsed="true">
+    <Position X="17" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
-      <FileName>User\Interfaces\IManager.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>User\Interfaces\IIsPromotedToTeamLeader.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="TaskManager.User.Interfaces.IPerson" Collapsed="true">
-    <Position X="9.75" Y="4.5" Width="1.5" />
+    <Position X="11.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAQAABAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>User\Interfaces\IPerson.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="TaskManager.User.Interfaces.IPromote" Collapsed="true">
-    <Position X="13.25" Y="4.25" Width="1.5" />
+    <Position X="20.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
       <FileName>User\Interfaces\IPromote.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="TaskManager.User.Interfaces.ITeam" Collapsed="true">
-    <Position X="18.5" Y="4.25" Width="1.5" />
+    <Position X="20.5" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAEAAAAAAAAAAAAAAAEABgQAAAAAAQAAAAAAAAAA=</HashCode>
       <FileName>User\Interfaces\ITeam.cs</FileName>
     </TypeIdentifier>
   </Interface>
+  <Interface Name="TaskManager.User.Interfaces.ITeamLeader" Collapsed="true">
+    <Position X="15.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>User\Interfaces\ITeamLeader.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Interface Name="TaskManager.User.Validation.IPersonValidation" Collapsed="true">
-    <Position X="18.5" Y="3.5" Width="1.5" />
+    <Position X="18.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ACAAAAAAAAAAAAAEAAAAAAAAAAAAAgAAAAAAAABAAAA=</HashCode>
       <FileName>User\Validation\IPersonValidation.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Enum Name="TaskManager.Task.Enum.PriorityType" Collapsed="true">
-    <Position X="18.5" Y="6" Width="1.5" />
+    <Position X="20.5" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAEAAA=</HashCode>
       <FileName>Task\Enum\PriorityType.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="TaskManager.Task.Enum.StatusType" Collapsed="true">
-    <Position X="13.25" Y="6.75" Width="1.5" />
+    <Position X="15.25" Y="7.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAIAAAAEAAgA=</HashCode>
       <FileName>Task\Enum\StatusType.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="TaskManager.User.Enums.Department" Collapsed="true">
-    <Position X="13.25" Y="6" Width="1.5" />
+    <Position X="15.25" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>QAAAAAEAAAIAAAAEAAAAAAEBAAAAAIAQAACAAAAAAAA=</HashCode>
       <FileName>User\Enums\Department.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="TaskManager.User.Enums.Gender" Collapsed="true">
-    <Position X="15" Y="6" Width="1.5" />
+    <Position X="17" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
       <FileName>User\Enums\Gender.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="TaskManager.User.Enums.PositionType" Collapsed="true">
-    <Position X="16.75" Y="6" Width="1.5" />
+    <Position X="18.75" Y="7" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AgAACAAAAAAAAAAAQAAAAAAAAAAAAgAAAAAAAAAAAAI=</HashCode>
       <FileName>User\Enums\PositionType.cs</FileName>

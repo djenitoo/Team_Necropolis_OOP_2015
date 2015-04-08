@@ -1,6 +1,10 @@
 ﻿namespace TaskManager.Common
 {
     using System;
+    using System.Collections.Generic;
+
+    using User.Interfaces;
+    using Task.Interfaces;
 
     public interface IValidation
     {
@@ -11,6 +15,8 @@
         void IntegerRange(int value, int max, int min, string errorMessage);
 
         void NotNullable(object obj, string param);
+
+        
        
     }
 }

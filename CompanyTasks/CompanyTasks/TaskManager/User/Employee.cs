@@ -9,6 +9,7 @@ namespace TaskManager.User
     using System.Linq;
     using System.Text;
 
+    using Common;
     using Enums;
     using User.Interfaces;
     using Task.Interfaces;
@@ -96,10 +97,8 @@ namespace TaskManager.User
             {
                 this.personalTodos.Remove(item);
             }
-            else
-            {
-                // here implement id the item is not in the set
-            }
+            
+            
         }
 
         public void AddPersonalTodo(IToDo item)
@@ -108,10 +107,7 @@ namespace TaskManager.User
             {
                 this.personalTodos.Add(item);
             }
-            else
-            {
-                // here implement id the item is already in the set
-            }
+            
         }
 
         public void EmptyPersonalTodos()

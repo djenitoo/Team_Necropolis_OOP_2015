@@ -44,7 +44,6 @@
             if (!(comments.Contains(comment)))
             {
                 this.comments.Add(comment);
-                // there is not handler if the comment exist in the comment set
             }
         }
 
