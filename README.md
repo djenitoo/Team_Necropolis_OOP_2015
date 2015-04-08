@@ -1,66 +1,34 @@
 # Team_Necropolis_OOP_2015
 Team work of Necropolis for OOP 2015 of Telerik Academy
 
-##Our project will be COMPANY TODO app
-###Plan
-####Users - Иван
-+ Human - name, date birth, sex, age (abstract class maybe)
-+ Employee - + position, salary, time worked (inheritors)
-+ Manager positon=manager(?) (inheritor)
-  * his team employees, can assing/edit todos of his team?
-  * can see progress of his team members 
-+ Boss - + positon=boss (inheritor)
-  * can asign/edit every todo of employees
-  * can see progress of every todo/project
-+  Client - name, his company, his project todo, give todos/task to boss/manager(?) (this cant be inherited i think)
-  * client may be IClientable for User class / or something like that
-+ stajanti maybe
-  
-**We can add interfaces for:**
-+ if the user is subordinate (employee, manager) - eg. ISubordinate
-+ if the user have people who he manage (manager/ boss) - eg. IManaging (?)
+##Our project is COMPANY TODO app
 
-_maybe only boss can make new users(and new clients) (like hiring) maybe also managers can hire_
-_also when user is done with task, there will be point for him, to show how much work he/she have done and will be saved to his profile_
-  
-_there should be option in their profile to see in which projects the collaborate_
+###Team members
++ Александър Павлов – Alexio86
++ Аспарух Христов – puhabg
++ Генко Петров – GenkoP
++ Джейлян Адемова - djenitoo
++ Иван Инджов – ivanindzov
++ Ния Омерска – niya.omerska
 
-###Todos/tasks/projects etc. - Генко
-+ Coment (maybe abstract)
-+ Note (name, coment) (inherit)
-+ Todo(name, coment, date due, reminder*) (inherit)
-+ Repeating Todo(name, coment, dates for repeat, reminders*) (inherit?)
-+ Shared Substasked Todo(name, coment, due date, reminder, subtasks, sharing wirh username)
-  * (i think not inheriting bc there is set of todos/subtasks)
+###Project Purpose
+The purpose of the project is to implement a todo application for Media press company.  
 
-**also every todo must have a option to see who assigned it (and to who maybe) (maybe something like history boss to manager, manager to employee, or maybe not idk)**
+With the help of that application bosses and team leaders can assign several types of tasks with priority to employees. Also every employee can make a personal todo’s for themselves.   
 
-*i think it will be nice for every task/todo/project to say if its public project or private something like that*
-  
-__*optional__
-  
-_option % of the task/project is done_
+The type of task are: Note, Todos with reminder, Todo with subtasks. Also there is Factory patter that implement 3 types of todos : Low, Medium and Important Todo.  
 
-###Functions
-1. Create new User / delete(?)
-  * for every user:
-   * can make new projects(w/o employees maybe or stajanti), todos, notes, assign todo/projects if have the rights
-   * every user can see public todos of company, 
-   * boss can see every task, 
-   * manager every one of his team, but not of other managers if they are private;
-2. Sorting
-  * show users by date hired, age, name, sex, points etc...
-  * todos can be sorted by date, name, priority, public, private, procent done...
-  * boss can see todos in new window for every user and their profile, the same for managers
-  * for every project we can see who is part of it, and maybe everyone of the team how much have done
-3. Assinging projects/todos
-  * boss and managers can assign them to employees, + employees to stajanti
+There are several types of Persons in the Company network: Boss, Team Leader, Senior Employee, Regular Employee, Junior and Clients with projects for the boss.  
 
-4. Also
-  * Asigned todo/project with todos (...., username of who assigned, username to who assigned) 
+The main idea is that there are clients with project for bosses, and then every company member that manages people can assign (client)projects to employees that he/she manages. This project can be with several subtask and team can be assigned to do it.  
 
-####Design
-+ Color tags
+There is an engine that implement several basic commands like: Create Boss, Team Leader etc., Important/Low/Medium Todos. 
+
+###Source code
+Git repo - [a link](https://github.com/djenitoo/Team_Necropolis_OOP_2015)
+
+###Class Diagram
+![alt tag](https://raw.githubusercontent.com/djenitoo/Team_Necropolis_OOP_2015/master/ApplicationClassDiagram.png)
 
 ####Progress of requirements
 
